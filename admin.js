@@ -1,6 +1,8 @@
 // // // console.log('ar');
 // // // console.log('first file puss')
 
+const { use } = require("react")
+
 // // // let a = [1, 2, 3, 4, 5];
 // // // let b = a.slice(0, 3);
 // // // console.log(b);
@@ -67,23 +69,26 @@
 
 // console.log(cmd);
 
-// const userdb = [
-//     {
-//         name: 'arshaikh',
-//         age: 21,
-//         single: false
-//     },
-//     {
-//         name: 'mahek',
-//         age: 18,
-//         single: false
-//     },
-//     {
-//         name: 'ziyan',
-//         age: 21,
-//         single: true
-//     }   
-// ]
-
-
+const userdb = [
+    {
+        name: 'arshaikh',
+        age: 21,
+        single: false
+    },
+    {
+        name: 'mahek',
+        age: 18,
+        single: false
+    },
+    {
+        name: 'ziyan',
+        age: 21,
+        single: true
+    }   
+];
+// console.log(Object.keys(userdb))
+// console.log(Object.values(userdb));
+// console.log(userdb.hasOwnProperty('name'));
 // console.log(userdb[0].name + ' and ' + userdb[1].name)
+
+
