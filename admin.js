@@ -42,3 +42,15 @@
 //     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 // }
 // console.log( user.greet()); // Output: Hello, my name is arshaikh and I am 22 years old.
+
+// let a = {
+//     1 : 'a',
+//     2 : 'b'
+// }
+// let b = {
+//     3 : 'c',
+//     4 : 'd'
+// }
+// let c = Object.assign({}, a, b)
+
+// console.log(c); 
