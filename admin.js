@@ -69,23 +69,23 @@ const { use } = require("react")
 
 // console.log(cmd);
 
-const userdb = [
-    {
-        name: 'arshaikh',
-        age: 21,
-        single: false
-    },
-    {
-        name: 'mahek',
-        age: 18,
-        single: false
-    },
-    {
-        name: 'ziyan',
-        age: 21,
-        single: true
-    }   
-];
+// const userdb = [
+//     {
+//         name: 'arshaikh',
+//         age: 21,
+//         single: false
+//     },
+//     {
+//         name: 'mahek',
+//         age: 18,
+//         single: false
+//     },
+//     {
+//         name: 'ziyan',
+//         age: 21,
+//         single: true
+//     }   
+// ];
 // console.log(Object.keys(userdb))
 // console.log(Object.values(userdb));
 // console.log(userdb.hasOwnProperty('name'));
