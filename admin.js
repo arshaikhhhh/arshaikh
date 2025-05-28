@@ -54,3 +54,17 @@
 // let c = Object.assign({}, a, b)
 
 // console.log(c); 
+
+// let users = {
+//     namez: 'arsh',
+//     agez: 21
+// }
+
+// let user = {
+//     name: 'armh',
+//     age: 19
+// }
+
+// let cmd = {...users, ...user}
+
+// console.log(cmd);
