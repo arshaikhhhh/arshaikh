@@ -32,3 +32,13 @@
 // // }
 // // console.log(a.usergreet()) 
 
+// let user = {
+//     name: "arshaikh",
+//     age: 22,
+//     email: "arshaikh2700@gmail.com"
+// }
+
+//  user.greet = function() { 
+//     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+// }
+// console.log( user.greet()); // Output: Hello, my name is arshaikh and I am 22 years old.
