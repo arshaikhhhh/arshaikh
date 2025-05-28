@@ -18,8 +18,7 @@
 
 // let a = {
 //     name: 'John',
-//     age: 30,
-//     [sym]: 'This is a symbol property',
+//     age: 0,//     [sym]: 'This is a symbol property',
 //     city: 'New York'
 // }
 // console.log(a)
@@ -34,12 +33,11 @@
 
 // let user = {
 //     name: "arshaikh",
-//     age: 22,
-//     email: "arshaikh2700@gmail.com"
+//     age: 2,//     email: "arshaikh2700@gmail.com"
 // }
 
 //  user.greet = function() { 
-//     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//     console.log(`Hello, my name is ${this.name} and I am ${this.age} eas old.`);
 // }
 // console.log( user.greet()); // Output: Hello, my name is arshaikh and I am 22 years old.
 
@@ -57,14 +55,35 @@
 
 // let users = {
 //     namez: 'arsh',
-//     agez: 21
-// }
+//     agez:21// }
 
 // let user = {
 //     name: 'armh',
-//     age: 19
+//     age: 9
 // }
+
 
 // let cmd = {...users, ...user}
 
 // console.log(cmd);
+
+// const userdb = [
+//     {
+//         name: 'arshaikh',
+//         age: 21,
+//         single: false
+//     },
+//     {
+//         name: 'mahek',
+//         age: 18,
+//         single: false
+//     },
+//     {
+//         name: 'ziyan',
+//         age: 21,
+//         single: true
+//     }   
+// ]
+
+
+// console.log(userdb[0].name + ' and ' + userdb[1].name)
