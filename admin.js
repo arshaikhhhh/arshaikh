@@ -1,7 +1,7 @@
 // // // console.log('ar');
 // // // console.log('first file puss')
 
-const { use } = require("react")
+// const { use } = require("react")
 
 // // // let a = [1, 2, 3, 4, 5];
 // // // let b = a.slice(0, 3);
@@ -131,3 +131,17 @@ const { use } = require("react")
 //     }
 
 // ]
+let btn = document.querySelector('.oled');
+let swt = document.querySelector('.plid');
+
+function clickToSee(){
+    let b =document.createElement('h1');
+    b.innerText = "Hello Bacho";
+    b.style.color = "red";
+}
+ 
+btn.addEventListener
+
+btn.addEventListener("click", function(){
+    clickToSee()
+})
