@@ -150,4 +150,34 @@
 //     clickToSee()
 // })
 
-console.log('Hello World');
+// function addUser(num1, num2){
+//     console.log(num1 + num2)
+
+// }
+// addUser(1,2)
+
+// function addUser(num1, num2){
+//     let a = num1+num2;
+//     return a
+// }
+
+// let result = addUser(3, 4);
+
+// console.log(result);
+
+// function isUserIn(username){
+//     return `Welcome ${username} You Just Fucking Logged In`;
+// }
+
+// console.log(isUserInn("arshaikh"));
+
+// function isUserIn(username){
+//     if(username === undefined){
+//         console.log("lodu username tera baap dega make lode bhosdike");
+//     }
+//     else{
+//     return `Welcome ${username} You Just Fucking Logged In`;
+//     }
+// }
+
+// console.log(isUserInn());
