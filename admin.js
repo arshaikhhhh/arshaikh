@@ -88,7 +88,16 @@ const { use } = require("react")
 // ];
 // console.log(Object.keys(userdb))
 // console.log(Object.values(userdb));
-// console.log(userdb.hasOwnProperty('name'));
+// console.log(Object.hasOwnProperty('name'));
 // console.log(userdb[0].name + ' and ' + userdb[1].name)
 
+// const users = {
+//     id: 1,
+//     name: 'arshaikh',
+//     username: 'arzh'
+// }
 
+// const {username} = users;
+
+// console.log(` Hey ${username} welcome to the site `)
+// console.log(`  You Commented ${username} Hahahah `) OBJECT DE-STRUCTERING
