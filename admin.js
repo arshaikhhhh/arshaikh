@@ -134,14 +134,18 @@
 // let btn = document.querySelector('.oled');
 // let swt = document.querySelector('.plid');
 
-function clickToSee(){
-    let b =document.createElement('h1');
-    b.innerText = "Hello Bacho";
-    b.style.color = "red";
-}
+// function clickToSee(){
+//     let b =document.createElement('h1');
+//     b.innerText = "Hello Bacho";
+//     b.style.color = "red";
+// }
  
-btn.addEventListener
+// btn.addEventListener
 
-btn.addEventListener("click", function(){
-    clickToSee()
-})
+// btn.addEventListener("click", function(){
+//     clickToSee()
+// })
+
+// swt.addEventListener("click", function(){
+//     clickToSee()
+// })
