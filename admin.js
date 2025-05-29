@@ -138,13 +138,14 @@ function clickToSee(){
     let b =document.createElement('h1');
     b.innerText = "CHUT";
     b.style.color = "red";
+     document.body.appendChild(b);
 }
  
 // btn.addEventListener
 
-// btn.addEventListener("click", function(){
-//     clickToSee()
-// })
+btn.addEventListener("click", function(){
+    clickToSee()
+})
 
 // swt.addEventListener("click", function(){
 //     clickToSee()
