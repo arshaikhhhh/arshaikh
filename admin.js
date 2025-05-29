@@ -140,7 +140,6 @@ function clickToSee(){
     b.style.color = "red";
 }
  
-btn.addEventListener
 
 btn.addEventListener("click", function(){
     clickToSee()
