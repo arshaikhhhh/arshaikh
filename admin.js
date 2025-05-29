@@ -101,3 +101,11 @@ const { use } = require("react")
 
 // console.log(` Hey ${username} welcome to the site `)
 // console.log(`  You Commented ${username} Hahahah `) OBJECT DE-STRUCTERING
+
+// JSON in db looks like this  
+
+// {
+//     "id": 1,
+//     "username": "arzh",
+//     "name": "arshaikh"
+// }
