@@ -105,7 +105,29 @@ const { use } = require("react")
 // JSON in db looks like this  
 
 // {
-//     "id": 1,
+    // "id": 1,
+    // "username": "arzh",
+    // "name": "arshaikh"
+// }
+
+// and this
+
+// [
+
+//     {
+//             "id": 1,
 //     "username": "arzh",
 //     "name": "arshaikh"
-// }
+//     },
+//     {
+//             "id": 2,
+//     "username": "arsh",
+//     "name": "arshaikh0"
+//     },
+//     {
+//             "id": 3,
+//     "username": "armh",
+//     "name": "arshaikh9"
+//     }
+
+// ]
