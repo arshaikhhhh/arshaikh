@@ -135,12 +135,13 @@ let btn = document.querySelector('.oled');
 let swt = document.querySelector('.plid');
 
 function clickToSee(){
-    let b =document.createElement('h1');
+    let b = document.createElement('h1');
     b.innerText = "Hello Bacho";
     b.style.color = "red";
+    document.body.appendChild(b); // lmao xd xd
 }
- 
 
 btn.addEventListener("click", function(){
-    clickToSee()
-})
+    clickToSee();
+});
+
