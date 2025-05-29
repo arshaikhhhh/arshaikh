@@ -137,7 +137,7 @@ let swt = document.querySelector('.plid');
 function clickToSee(){
     let b =document.createElement('h1');
     b.innerText = "CHUT";
-    b.style.color = "red";
+    b.style.color = "green";
      document.body.appendChild(b);
 }
  
