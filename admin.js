@@ -181,3 +181,49 @@
 // }
 
 // console.log(isUserInn());
+
+
+// function addToCart(...val){
+
+//     return val;
+
+// }
+
+// console.log(addToCart("dildo", "condom", "period blood"));
+
+// let blinkit = {
+//     name: "mahek",
+//     area: "amroli"
+// }
+
+// function addObjects(e){
+//      return `${e.name} is from ${e.area} thats why they get orders done`
+// }
+// console.log(addObjects(blinkit));
+
+// function addObjectz(e){
+//      return `${e.name} is from ${e.area} thats why they don't get orders done`
+// }
+
+// console.log(addObjectz({
+//     name: "arshaikh",
+//     area: "sachin"
+// }))
+
+// let arr = [100, 200, 300, 700, 7100]
+
+// function getArr(e){
+//     return `you have to give someone ${e[4]}`
+// }
+
+// console.log(getArr(arr))
+
+// function getArr(e){
+//     return `you have to give someone ${e[4]}`
+// }
+
+// console.log(getArr([100, 200, 300, 400, 1150]));
+
+
+
+
