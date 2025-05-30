@@ -289,4 +289,19 @@
 // const bundkafunction = (lund1, lund2) => ( lund1+lund2 )//implicit return funtion/one line function(you'll use paranthisis() and dont have to use retun)
 // console.log(bundkafunction(3, 4));
 
-// you cant use this keyword in arrow function
+// you cant use this keyword in arrow function 
+
+// *****************IIFE(Immedietly Invoked Function Expression)*****************
+//named iife
+(function arZod(){
+   console.log(`yall okayyy`);
+})();
+// unnamed iife
+(function(){
+   console.log(`ewww i aint`);
+})();
+//arrow iife and how to pass variable in funaction
+( (name) => {
+   console.log(`hey, ${name} welcome to console`);
+   
+} )("arshaikh");
