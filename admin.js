@@ -256,20 +256,37 @@
 
 // you cant use this keyword in node enviroment but if used in function you will see methods and values but,
 //  still if you refer to variable or something this will return undefined in function if used in node enviroment
-
+// you cant use this keyword in arrow function
 // ******* so where do we use it the most it will be in browser********
 
-console.log(this)   //( from now on i am refering this keyword in browser console) this this keyword will refer to global context and in global context if script is empty it will return window object if there is other variable in script it will return those too
+// console.log(this)   //( from now on i am refering this keyword in browser console) this this keyword will refer to global context and in global context if script is empty it will return window object if there is other variable in script it will return those too
 
-// if you use this in objects like this
+// // if you use this in objects like this
 
-let a = {
+// let a = {
 
-    name: 'arshaikh',
-    age: 21,
-    welcomeGreet: function(){
-        console.log(this.username);
+//     name: 'arshaikh',
+//     age: 21,
+//     welcomeGreet: function(){
+//         console.log(`hey, ${this.name}`);
         
-    }
+//     }
 
-}
+// }
+// a.welcomeGreet()
+// a.name = "lodu" // change the current context now this will refer to this new value
+// a.welcomeGreet()
+
+// *****arrow function[explicit return and implicit return function]*******
+// explicit return function
+// const aandkafunction = () => {
+//       let b = "gand";
+//       return b
+// }  // when you use curly braces({}) you have to use return
+
+// console.log(aandkafunction());
+
+// const bundkafunction = (lund1, lund2) => ( lund1+lund2 )//implicit return funtion/one line function(you'll use paranthisis() and dont have to use retun)
+// console.log(bundkafunction(3, 4));
+
+// you cant use this keyword in arrow function
