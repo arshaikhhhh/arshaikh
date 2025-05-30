@@ -225,6 +225,6 @@ btn.addEventListener("click", function(){
 
 // console.log(getArr([100, 200, 300, 400, 1150]));
 
-
+console.log('we back mf');
 
 
