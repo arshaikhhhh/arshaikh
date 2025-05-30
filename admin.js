@@ -31,14 +31,14 @@
 // // a.usergreet = function lol(){
 // //    console.log('owfjoe')
 // // }
-// // console.log(a.usergreet()) 
+// // console.log(a.usergreet())
 
 // let user = {
 //     name: "arshaikh",
 //     age: 2,//     email: "arshaikh2700@gmail.com"
 // }
 
-//  user.greet = function() { 
+//  user.greet = function() {
 //     console.log(`Hello, my name is ${this.name} and I am ${this.age} eas old.`);
 // }
 // console.log( user.greet()); // Output: Hello, my name is arshaikh and I am 22 years old.
@@ -53,7 +53,7 @@
 // }
 // let c = Object.assign({}, a, b)
 
-// console.log(c); 
+// console.log(c);
 
 // let users = {
 //     namez: 'arsh',
@@ -63,7 +63,6 @@
 //     name: 'armh',
 //     age: 9
 // }
-
 
 // let cmd = {...users, ...user}
 
@@ -84,7 +83,7 @@
 //         name: 'ziyan',
 //         age: 21,
 //         single: true
-//     }   
+//     }
 // ];
 // console.log(Object.keys(userdb))
 // console.log(Object.values(userdb));
@@ -102,12 +101,12 @@
 // console.log(` Hey ${username} welcome to the site `)
 // console.log(`  You Commented ${username} Hahahah `) OBJECT DE-STRUCTERING
 
-// JSON in db looks like this  
+// JSON in db looks like this
 
 // {
-    // "id": 1,
-    // "username": "arzh",
-    // "name": "arshaikh"
+// "id": 1,
+// "username": "arzh",
+// "name": "arshaikh"
 // }
 
 // and this
@@ -131,7 +130,6 @@
 //     }
 
 // ]
-
 
 // swt.addEventListener("click", function(){
 //     clickToSee()
@@ -168,7 +166,6 @@
 // }
 
 // console.log(isUserInn());
-
 
 // function addToCart(...val){
 
@@ -220,7 +217,7 @@
 
 // console.log(abq)  //will throw error
 // console.log(bbq)  //will throw error
-// console.log(cbq) //works perfectly when used in blocked scoped but you cant access var in function scope 
+// console.log(cbq) //works perfectly when used in blocked scoped but you cant access var in function scope
 
 // function addTwo(){
 
@@ -241,18 +238,38 @@
 // }
 // dolDab()
 
-let btn = document.querySelector('.oled');
-let swt = document.querySelector('.plid');
+// let btn = document.querySelector('.oled');
+// let swt = document.querySelector('.plid');
 
-function clickToSee(){
-    let b =document.createElement('h1');
-    b.innerText = "CHUT";
-    b.style.color = "green";
-     document.body.appendChild(b);
+// function clickToSee(){
+//     let b =document.createElement('h1');
+//     b.innerText = "CHUT";
+//     b.style.color = "green";
+//      document.body.appendChild(b);
+// }
+
+// // btn.addEventListener
+
+// btn.addEventListener("click", function(){
+//     clickToSee()
+// })
+
+// you cant use this keyword in node enviroment but if used in function you will see methods and values but,
+//  still if you refer to variable or something this will return undefined in function if used in node enviroment
+
+// ******* so where do we use it the most it will be in browser********
+
+console.log(this)   //( from now on i am refering this keyword in browser console) this this keyword will refer to global context and in global context if script is empty it will return window object if there is other variable in script it will return those too
+
+// if you use this in objects like this
+
+let a = {
+
+    name: 'arshaikh',
+    age: 21,
+    welcomeGreet: function(){
+        console.log(this.username);
+        
+    }
+
 }
- 
-// btn.addEventListener
-
-btn.addEventListener("click", function(){
-    clickToSee()
-})
