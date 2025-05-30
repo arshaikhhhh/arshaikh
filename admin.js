@@ -131,21 +131,7 @@
 //     }
 
 // ]
-let btn = document.querySelector('.oled');
-let swt = document.querySelector('.plid');
 
-function clickToSee(){
-    let b =document.createElement('h1');
-    b.innerText = "CHUT";
-    b.style.color = "green";
-     document.body.appendChild(b);
-}
- 
-// btn.addEventListener
-
-btn.addEventListener("click", function(){
-    clickToSee()
-})
 
 // swt.addEventListener("click", function(){
 //     clickToSee()
@@ -225,6 +211,48 @@ btn.addEventListener("click", function(){
 
 // console.log(getArr([100, 200, 300, 400, 1150]));
 
-console.log('we back mf');
+// console.log('we back mf');
+// if(true){
+// let abq = 300;
+// const bbq = 400;
+// var cbq = 600;
+// }
 
+// console.log(abq)  //will throw error
+// console.log(bbq)  //will throw error
+// console.log(cbq) //works perfectly when used in blocked scoped but you cant access var in function scope 
 
+// function addTwo(){
+
+//      let bola = "arora"
+//      function addThree(){
+//         console.log(bola)
+//         let bumra = "cr7"
+//      }
+//      addThree()
+
+//     //  console.log(bumra)  // this will throw error cuz you cannt access child function's variable in parent one
+// }
+// addTwo()
+// dolDab()   // this will throw an error cuz you cant run function before initialization if your holding it into variables
+// let dolDab = function(){
+//     let b = "bruhhhh"
+//     console.log(b)
+// }
+// dolDab()
+
+let btn = document.querySelector('.oled');
+let swt = document.querySelector('.plid');
+
+function clickToSee(){
+    let b =document.createElement('h1');
+    b.innerText = "CHUT";
+    b.style.color = "green";
+     document.body.appendChild(b);
+}
+ 
+// btn.addEventListener
+
+btn.addEventListener("click", function(){
+    clickToSee()
+})
