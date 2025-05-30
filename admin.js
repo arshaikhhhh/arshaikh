@@ -293,15 +293,15 @@
 
 // *****************IIFE(Immedietly Invoked Function Expression)*****************
 //named iife
-(function arZod(){
-   console.log(`yall okayyy`);
-})();
-// unnamed iife
-(function(){
-   console.log(`ewww i aint`);
-})();
-//arrow iife and how to pass variable in funaction
-( (name) => {
-   console.log(`hey, ${name} welcome to console`);
+// (function arZod(){
+//    console.log(`yall okayyy`);
+// })();
+// // unnamed iife
+// (function(){
+//    console.log(`ewww i aint`);
+// })();
+// //arrow iife and how to pass variable in funaction
+// ( (name) => {
+//    console.log(`hey, ${name} welcome to console`);
    
-} )("arshaikh");
+// } )("arshaikh");
