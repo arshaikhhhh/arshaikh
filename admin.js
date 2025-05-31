@@ -305,3 +305,14 @@
 //    console.log(`hey, ${name} welcome to console`);
    
 // } )("arshaikh");
+
+// let a = 10
+
+// if( a < 3 ){
+//     console.log('yes it is');
+// }else if( a != 10){
+//     console.log("how'd you thik that 3 is greater than 10");
+// }else{
+//     console.log("here we are");
+    
+// }
