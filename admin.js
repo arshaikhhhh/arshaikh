@@ -345,3 +345,61 @@
 //     console.log("the month does'nt exist");
 //     break;  
 // }
+
+// loops
+
+// for ( let i = 1; i < 11; i++){
+//     console.log(`${i} is i`);
+//     for (let j = 1; j< 11; j++){
+//         console.log(j + (j * i));
+        
+//     }
+    
+// }
+
+// let a = 0;
+
+// do{
+  
+//    console.log(` ${a} i love mahek `);
+//     a++ 
+   
+// }while(a < 10)
+
+// working of loops with array
+
+// let arr = ['superman', 'spiderman', 'batman', 'deadpool'];
+
+// for (let i = 0; i < arr.length; i++){
+//     console.log(`your hero is ${arr[i]}`);
+// }
+
+// let arr = ['superman', 'spiderman', 'batman', 'deadpool'];
+// let i = 0;
+
+// do{
+ 
+//     console.log(`${arr[i]}`);
+//     i++
+
+// }while(i < arr.length)
+
+// switch and continue in loops
+
+// for (let a = 0; a < 10; a++){
+//     if(a == 5){
+//     console.log(`a is not ${a}`);
+//     break;
+//     }
+//     console.log(`a is ${a}`);
+    
+// }
+
+// for (let a = 0; a < 10; a++){
+//     if(a == 5){
+//     console.log(`a is not ${a}`);
+//     continue;
+//     }
+//     console.log(`a is ${a}`);
+    
+// }
