@@ -529,3 +529,134 @@
    
 // } )
 
+// filter()
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+
+
+// let numbs = arr.filter( (e) => ( e>5 ) )
+// console.log(numbs);
+
+// const books = [
+//   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee" },
+//   { name: "Green Eggs and Ham", publishYear: 1960, author: "Dr. Seuss" },
+//   { name: "1984", publishYear: 1949, author: "George Orwell" },
+//   { name: "Brave New World", publishYear: 1932, author: "Aldous Huxley" },
+//   { name: "The Great Gatsby", publishYear: 1925, author: "F. Scott Fitzgerald" },
+//   { name: "The Catcher in the Rye", publishYear: 1951, author: "J.D. Salinger" },
+//   { name: "The Lord of the Rings", publishYear: 1954, author: "J.R.R. Tolkien" },
+//   { name: "Fahrenheit 451", publishYear: 1953, author: "Ray Bradbury" },
+//   { name: "The Two Towers", publishYear: 1954, author: "J.R.R. Tolkien" },
+//   { name: "Pride and Prejudice", publishYear: 1813, author: "Jane Austen" },
+//   { name: "Harry Potter and the Sorcerer’s Stone", publishYear: 1997, author: "J.K. Rowling" },
+//   { name: "Harry Potter and the Chamber of Secrets", publishYear: 1998, author: "J.K. Rowling" },
+//   { name: "The Alchemist", publishYear: 1988, author: "Paulo Coelho" },
+//   { name: "Matilda", publishYear: 1988, author: "Roald Dahl" }
+// ];
+
+
+// let brr = books.filter( (e) => { 
+//     return e.publishYear === 1998 && e.author === "J.K. Rowling" 
+
+// } )
+// console.log(brr);
+
+// map()
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+
+// let dehm = arr.map( (e) => ( e * 2 ) )
+// console.log(dehm);
+
+
+
+// const books = [
+//   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee" },
+//   { name: "Green Eggs and Ham", publishYear: 1960, author: "Dr. Seuss" },
+//   { name: "1984", publishYear: 1949, author: "George Orwell" },
+//   { name: "Brave New World", publishYear: 1932, author: "Aldous Huxley" },
+//   { name: "The Great Gatsby", publishYear: 1925, author: "F. Scott Fitzgerald" },
+//   { name: "The Catcher in the Rye", publishYear: 1951, author: "J.D. Salinger" },
+//   { name: "The Lord of the Rings", publishYear: 1954, author: "J.R.R. Tolkien" },
+//   { name: "Fahrenheit 451", publishYear: 1953, author: "Ray Bradbury" },
+//   { name: "The Two Towers", publishYear: 1954, author: "J.R.R. Tolkien" },
+//   { name: "Pride and Prejudice", publishYear: 1813, author: "Jane Austen" },
+//   { name: "Harry Potter and the Sorcerer’s Stone", publishYear: 1997, author: "J.K. Rowling" },
+//   { name: "Harry Potter and the Chamber of Secrets", publishYear: 1998, author: "J.K. Rowling" },
+//   { name: "The Alchemist", publishYear: 1988, author: "Paulo Coelho" },
+//   { name: "Matilda", publishYear: 1988, author: "Roald Dahl" }
+// ];
+
+
+// let brr = books.map( (e) => {
+//    return console.log(`this book ${e.name} was published in ${e.publishYear} and written by ${e.author}`) 
+// })
+
+// chaining of filter and map
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+
+// let crr = arr.map( (e) => ( e * 10 ) ).filter( (e) => e>50 );
+// console.log(crr);
+
+// const books = [
+//   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee" },
+//   { name: "Green Eggs and Ham", publishYear: 1960, author: "Dr. Seuss" },
+//   { name: "1984", publishYear: 1949, author: "George Orwell" },
+//   { name: "Brave New World", publishYear: 1932, author: "Aldous Huxley" },
+//   { name: "The Great Gatsby", publishYear: 1925, author: "F. Scott Fitzgerald" },
+//   { name: "The Catcher in the Rye", publishYear: 1951, author: "J.D. Salinger" },
+//   { name: "The Lord of the Rings", publishYear: 1954, author: "J.R.R. Tolkien" },
+//   { name: "Fahrenheit 451", publishYear: 1953, author: "Ray Bradbury" },
+//   { name: "The Two Towers", publishYear: 1954, author: "J.R.R. Tolkien" },
+//   { name: "Pride and Prejudice", publishYear: 1813, author: "Jane Austen" },
+//   { name: "Harry Potter and the Sorcerer’s Stone", publishYear: 1997, author: "J.K. Rowling" },
+//   { name: "Harry Potter and the Chamber of Secrets", publishYear: 1998, author: "J.K. Rowling" },
+//   { name: "The Alchemist", publishYear: 1988, author: "Paulo Coelho" },
+//   { name: "Matilda", publishYear: 1988, author: "Roald Dahl" }
+// ];
+
+// let brr = books.filter( (e) => e.publishYear == 1988 )
+//                .map( (e) => {
+//                 console.log(`the book name is ${e.name} and was written by ${e.author}`);
+//                 return e
+//                } )
+// console.log(brr);
+
+// reduce()
+
+// let arr = [1,2,3]
+
+// let b = arr.reduce( (acc , crr) => ( acc+crr ) )
+
+// console.log(b);
+
+// const books = [
+//   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee", price: 399 },
+//   { name: "Green Eggs and Ham", publishYear: 1960, author: "Dr. Seuss", price: 249 },
+//   { name: "1984", publishYear: 1949, author: "George Orwell", price: 299 },
+//   { name: "Brave New World", publishYear: 1932, author: "Aldous Huxley", price: 275 },
+//   { name: "The Great Gatsby", publishYear: 1925, author: "F. Scott Fitzgerald", price: 199 },
+//   { name: "The Catcher in the Rye", publishYear: 1951, author: "J.D. Salinger", price: 289 },
+//   { name: "The Lord of the Rings", publishYear: 1954, author: "J.R.R. Tolkien", price: 899 },
+//   { name: "Fahrenheit 451", publishYear: 1953, author: "Ray Bradbury", price: 269 },
+//   { name: "The Two Towers", publishYear: 1954, author: "J.R.R. Tolkien", price: 799 },
+//   { name: "Pride and Prejudice", publishYear: 1813, author: "Jane Austen", price: 159 },
+//   { name: "Harry Potter and the Sorcerer’s Stone", publishYear: 1997, author: "J.K. Rowling", price: 499 },
+//   { name: "Harry Potter and the Chamber of Secrets", publishYear: 1998, author: "J.K. Rowling", price: 549 },
+//   { name: "The Alchemist", publishYear: 1988, author: "Paulo Coelho", price: 320 },
+//   { name: "Matilda", publishYear: 1988, author: "Roald Dahl", price: 289 }
+// ];
+
+
+// let brr = books.filter( (e) => {
+//     return  e.publishYear == 1988
+  
+// } ).reduce( (acc, crr) => {
+//     let cl = acc+crr.price  
+//     return cl
+// },0)
+
+// console.log(brr);
+
+
