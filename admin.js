@@ -410,14 +410,14 @@
   
 // AND(&&), OR(||) in if-else
 
-let i = {
+// let i = {
 
-   node : "arzh",
-   logged: true,
-   email: "arzh@email.com",
-   phone: false
+//    node : "arzh",
+//    logged: true,
+//    email: "arzh@email.com",
+//    phone: false
 
-}
+// }
 // AND(&&) Example
 // if(i.node && i.logged == true){
 //     console.log("we so back " + i.node);
