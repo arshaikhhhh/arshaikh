@@ -403,7 +403,129 @@
 //     console.log(`a is ${a}`);
     
 // }
+// short hand version of if-else
+//  let b = 100;
+
+//  (b == 100) ? console.log("yes b sahi hai") : console.log("no its not");
+  
+// AND(&&), OR(||) in if-else
+
+let i = {
+
+   node : "arzh",
+   logged: true,
+   email: "arzh@email.com",
+   phone: false
+
+}
+// AND(&&) Example
+// if(i.node && i.logged == true){
+//     console.log("we so back " + i.node);
+    
+// }else{
+//     console.log("logg in mf");
+    
+// }
+
+// OR(||) Example
+// if(i.email || i.phone == true){
+//     console.log("danm you use personal info wow");
+// }
+// else{
+//     console.log("bhai i am mark zuckerburg");
+// }
 
 // important url: https://developer.mozilla.org/en-US/docs/Glossary/Control_flow and 
 // https://latentflip.com/loupe/?code=ZnVuY3Rpb24gb25lKCkgew0KICB0d28oKTsNCn0NCg0KZnVuY3Rpb24gdHdvKCkgew0KICB0aHJlZSgpOw0KfQ0KDQpmdW5jdGlvbiB0aHJlZSgpIHsNCiAgY29uc29sZS5sb2coIkhlbGxvIik7DQp9DQoNCm9uZSgpOw0K!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+
+// Higher Order Array Loops + ForIN + Map(new datatype, you can only pass a unique value in this)
+
+// let map = new Map();
+// map.set("IN", "india")
+// map.set("USA", "United States Of America")
+// map.set("IN", "india") //loop wont recognise this cuz its not unique value
+// map.set("FR", "France")
+// // ForOf(for of is only higher order loop which can iterate on Map datatype cuz it does not require key which map does not have)
+// for (const e of map) {
+//    console.log(`it ${e}`);
+   
+// }
+
+
+// let a = ['arshaikh', 'mahek', 'ziyan']
+
+// for (const e of a) {
+//     console.log(e);
+    
+// }
+
+
+//ForIN(Can Be Used On Objects And Array(But With Specific Method) Both)
+
+// let bol = {
+
+//     name: "Arshaikh",
+//     age: 21,
+//     soc: "insta"
+
+// }
+
+// for (const i in bol) {
+//    console.log(`${i} is ${bol[i]}`);
+// }
+
+// use on Arrays
+// let a = ['arshaikh', 'mahek', 'ziyan']
+ 
+
+// for (const i in a){
+//     console.log(a[i]);
+// }
+
+// forEach(mostly used) on array+ objects in array
+// you can use functions(which dont have name cuz it is call back function and call back functions does'nt have name)
+//  or arrow function on forEach
+// on array
+
+// let lol = [1,2,3,4,5,6,7,8,9]
+
+// lol.forEach( (e) => {
+//    console.log(e);
+   
+// } )
+
+// let dbInfo = [
+//     {
+//         name: "arshaikh",
+//         phone: "9106775722",
+//         age: "20",
+//         email: "arshaikh2700@gmail.com"
+//     },
+//     {
+//         name: "mahek",
+//         phone: "9484034020",
+//         age: "18",
+//         email: "mahek@google.com"
+//     },
+//     {
+//         name: "ziyan",
+//         phone: "9120391309",
+//         age: "21",
+//         email: "ziyan@google.com"
+//     }
+// ]
+
+// dbInfo.forEach( (e) => {
+//     console.log(`the name of account is ${e.name} the phone number is ${e.phone} and age of user is ${e.age} and here is email ${e.email}`);
+    
+// } )
+
+// the parameters you can pass in function are index, item and array it self
+
+// let wind = ["ar", "mahu", "zack"]
+
+// wind.forEach( (index, item, arr) => {
+//    console.log(index, item, arr);
+   
+// } )
 
