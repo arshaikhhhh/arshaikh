@@ -738,3 +738,62 @@
 //  console.log(`your stationery total is ${arr} and electronics total is ${arr2}`);
 //  console.log(`total bill: ${arr+arr2}`);
  
+// let a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+// let b = a.map( (e) => ( e - 9 ) )
+// console.log(b);
+
+// let b = a.filter( (e) => ( e>35 ) )
+// console.log(b);
+
+// let b = a.reduce( (acc, crr) => ( acc+crr ), 0)
+// console.log(b);
+
+// let chain = a.filter( (e) => ( e>56 ) ).reduce( (acc, crr) => ( acc+crr ), 0)
+// console.log(chain);
+
+const users = [
+  { name: "Alice", age: 25, isSubscribed: true },
+  { name: "Bob", age: 30, isSubscribed: false },
+  { name: "Charlie", age: 22, isSubscribed: true },
+  { name: "David", age: 28, isSubscribed: false },
+  { name: "Eve", age: 35, isSubscribed: true },
+];
+
+// let arr = users.filter( (e) => ( e.isSubscribed == true )).map((e)=>( e.name))
+// console.log(arr);
+
+
+// let arr = users.reduce((acc, crr) => ( acc+crr.age/5 ), 0)
+// console.log(arr);
+
+// let arr = users.filter( (e) => ( e.isSubscribed == true ) ).reduce( (acc, crr) => ( acc+crr.isSubscribed ), 0)
+// console.log(arr);
+
+// let arr = users.map( (e) => ( e.name ) ).join()
+// console.log(arr);
+
+// ✅ Total items in the cart (add all quantities)
+
+// ✅ Total cart value (price × quantity for all items)
+
+// ✅ List of product names above ₹1000 (after multiplying quantity)
+
+// ✅ Make a new array with 18% GST added in each item (new key: priceWithGST)
+// const cart = [
+//   { product: "Shirt", price: 1200, quantity: 2 },
+//   { product: "Jeans", price: 2400, quantity: 1 },
+//   { product: "Socks", price: 150, quantity: 4 },
+//   { product: "Jacket", price: 3200, quantity: 1 },
+// ];
+
+// let arr = cart.reduce( (acc, crr) => (acc+crr.quantity), 0)
+// console.log(arr);
+
+// let arr = cart.map( (e) => ( e.price*e.quantity ) ).reduce( (acc, crr) => ( acc+crr ), 0)
+// console.log(arr);
+
+// let arr = cart.filter( (e) => ( e.price*e.quantity>1000 ) ).map( (e) => ( e.product ) )
+// console.log(arr);
+
+
