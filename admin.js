@@ -592,71 +592,149 @@
 //    return console.log(`this book ${e.name} was published in ${e.publishYear} and written by ${e.author}`) 
 // })
 
-// chaining of filter and map
+// chaining
+// chaining on array
+// let a = [1,2,3,4,5,6,7,8,9,10]
 
-// let arr = [1,2,3,4,5,6,7,8,9,10]
-
-// let crr = arr.map( (e) => ( e * 10 ) ).filter( (e) => e>50 );
-// console.log(crr);
-
-// const books = [
-//   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee" },
-//   { name: "Green Eggs and Ham", publishYear: 1960, author: "Dr. Seuss" },
-//   { name: "1984", publishYear: 1949, author: "George Orwell" },
-//   { name: "Brave New World", publishYear: 1932, author: "Aldous Huxley" },
-//   { name: "The Great Gatsby", publishYear: 1925, author: "F. Scott Fitzgerald" },
-//   { name: "The Catcher in the Rye", publishYear: 1951, author: "J.D. Salinger" },
-//   { name: "The Lord of the Rings", publishYear: 1954, author: "J.R.R. Tolkien" },
-//   { name: "Fahrenheit 451", publishYear: 1953, author: "Ray Bradbury" },
-//   { name: "The Two Towers", publishYear: 1954, author: "J.R.R. Tolkien" },
-//   { name: "Pride and Prejudice", publishYear: 1813, author: "Jane Austen" },
-//   { name: "Harry Potter and the Sorcerer’s Stone", publishYear: 1997, author: "J.K. Rowling" },
-//   { name: "Harry Potter and the Chamber of Secrets", publishYear: 1998, author: "J.K. Rowling" },
-//   { name: "The Alchemist", publishYear: 1988, author: "Paulo Coelho" },
-//   { name: "Matilda", publishYear: 1988, author: "Roald Dahl" }
-// ];
-
-// let brr = books.filter( (e) => e.publishYear == 1988 )
-//                .map( (e) => {
-//                 console.log(`the book name is ${e.name} and was written by ${e.author}`);
-//                 return e
-//                } )
-// console.log(brr);
-
-// reduce()
-
-// let arr = [1,2,3]
-
-// let b = arr.reduce( (acc , crr) => ( acc+crr ) )
+// let b = a.map( (e) => ( e * 10 ) ).filter( (e) => ( e>50 ) )
 
 // console.log(b);
 
-// const books = [
-//   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee", price: 399 },
-//   { name: "Green Eggs and Ham", publishYear: 1960, author: "Dr. Seuss", price: 249 },
-//   { name: "1984", publishYear: 1949, author: "George Orwell", price: 299 },
-//   { name: "Brave New World", publishYear: 1932, author: "Aldous Huxley", price: 275 },
-//   { name: "The Great Gatsby", publishYear: 1925, author: "F. Scott Fitzgerald", price: 199 },
-//   { name: "The Catcher in the Rye", publishYear: 1951, author: "J.D. Salinger", price: 289 },
-//   { name: "The Lord of the Rings", publishYear: 1954, author: "J.R.R. Tolkien", price: 899 },
-//   { name: "Fahrenheit 451", publishYear: 1953, author: "Ray Bradbury", price: 269 },
-//   { name: "The Two Towers", publishYear: 1954, author: "J.R.R. Tolkien", price: 799 },
-//   { name: "Pride and Prejudice", publishYear: 1813, author: "Jane Austen", price: 159 },
-//   { name: "Harry Potter and the Sorcerer’s Stone", publishYear: 1997, author: "J.K. Rowling", price: 499 },
-//   { name: "Harry Potter and the Chamber of Secrets", publishYear: 1998, author: "J.K. Rowling", price: 549 },
-//   { name: "The Alchemist", publishYear: 1988, author: "Paulo Coelho", price: 320 },
-//   { name: "Matilda", publishYear: 1988, author: "Roald Dahl", price: 289 }
+// chaining on objects in arrays
+
+// const users = [
+//   {
+//     name: "Alice Johnson",
+//     number: "9876543210",
+//     username: "alicejohnson",
+//     password: "alice@123",
+//     createdAt: 2022
+//   },
+//   {
+//     name: "Bob Smith",
+//     number: "9123456780",
+//     username: "bobsmith",
+//     password: "bob@2022",
+//     createdAt: 2022   // same as Alice
+//   },
+//   {
+//     name: "Charlie Patel",
+//     number: "9988776655",
+//     username: "charliepatel",
+//     password: "charlie2023!",
+//     createdAt: 2023
+//   },
+//   {
+//     name: "Diana Mehta",
+//     number: "9012345678",
+//     username: "dianamehta",
+//     password: "diana2024#",
+//     createdAt: 2024
+//   },
+//   {
+//     name: "Ethan Verma",
+//     number: "9090909090",
+//     username: "ethanverma",
+//     password: "ethan@2025",
+//     createdAt: 2025
+//   }
+// ];
+
+// let userChain = users.filter( (e) => ( e.createdAt == 2022 ) ).map( (e) => ( console.log(`this account ${e.username} created on ${e.createdAt}`)
+//  ) )
+
+// reduce()
+
+// reduce on arrays
+
+// let arr = [1,2,3]
+
+// let prr = arr.reduce( (acc, crr) => ( acc+crr ))
+
+// console.log(prr);
+
+//  reduce on objects in arrays
+
+// const shoppingCart = [
+//   {
+//     productName: "Wireless Mouse",
+//     price: 800,
+//     quantity: 2,
+//     total: 1600
+//   },
+//   {
+//     productName: "Keyboard",
+//     price: 1200,
+//     quantity: 1,
+//     total: 1200
+//   },
+//   {
+//     productName: "Laptop Stand",
+//     price: 1500,
+//     quantity: 1,
+//     total: 1500
+//   },
+//   {
+//     productName: "Notebook",
+//     price: 60,
+//     quantity: 5,
+//     total: 300
+//   },
+//   {
+//     productName: "Pen Set",
+//     price: 100,
+//     quantity: 3,
+//     total: 300
+//   }
+// ];
+
+// let arr = shoppingCart.reduce( (acc,crr) => ( acc+crr.price ), 0)
+
+// console.log(arr);
+
+//  chaining on reduce
+// const shoppingCart = [
+//   {
+//     productName: "Wireless Mouse",
+//     productType: "electronics",
+//     price: 800,
+//     quantity: 2,
+//     total: 1600
+//   },
+//   {
+//     productName: "Keyboard",
+//     productType: "electronics",
+//     price: 1200,
+//     quantity: 1,
+//     total: 1200
+//   },
+//   {
+//     productName: "Laptop Stand",
+//     productType: "electronics",
+//     price: 1500,
+//     quantity: 1,
+//     total: 1500
+//   },
+//   {
+//     productName: "Notebook",
+//     productType: "stationery",
+//     price: 60,
+//     quantity: 5,
+//     total: 300
+//   },
+//   {
+//     productName: "Pen Set",
+//     productType: "stationery",
+//     price: 100,
+//     quantity: 3,
+//     total: 300
+//   }
 // ];
 
 
-// let brr = books.filter( (e) => {
-//     return  e.publishYear == 1988
-  
-// } ).reduce( (acc, crr) => {
-//     let cl = acc+crr.price  
-//     return cl
-// },0)
+//  let arr = shoppingCart.filter( (e) => ( e.productType == "stationery" ) ).reduce( (acc, crr) => ( acc+crr.total ), 0)
+//  let arr2 = shoppingCart.filter( (e) => ( e.productType == "electronics" ) ).reduce( (acc, crr) => ( acc+crr.total ), 0)
 
-// console.log(brr);
-
-
+//  console.log(`your stationery total is ${arr} and electronics total is ${arr2}`);
+//  console.log(`total bill: ${arr+arr2}`);
+ 
