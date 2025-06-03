@@ -796,4 +796,5 @@ const users = [
 // let arr = cart.filter( (e) => ( e.price*e.quantity>1000 ) ).map( (e) => ( e.product ) )
 // console.log(arr);
 
+// console.log(" worse day of my coding journey 03/06/2025 lose motivation watched webseires and stuff till 8:21 ")
 
