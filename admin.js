@@ -799,16 +799,31 @@
 // console.log(" worse day of my coding journey 03/06/2025 lose motivation watched webseires and stuff till 8:21 ")
 
 // ***create element and push it to HTML***
+// let cnt = 0;
 
-// function crElmnt(){
-// let prada = document.createElement('h2')
-// prada.innerText = "lmao";
-// prada.className = "diddy"
-// prada.style.color = "yellow"
-// document.body.appendChild(prada)
+// function crElmnt() {
+//   cnt++;
+//   var prada = document.createElement('h2');
+//   prada.innerText = "lmao";
+//   prada.className = `diddy${cnt}`;
+//   prada.style.color = "yellow";
+//   document.body.appendChild(prada);
 // }
 
-// let crd = document.querySelector('.oled')
-// crd.addEventListener("click", function(){
-//   crElmnt()
-// })
+// let crd = document.querySelector('.oled');
+// crd.addEventListener("click", function () {
+//   crElmnt();
+// });
+
+// ***delete element from html start from last*******
+
+// let dt = document.querySelector('.plid');
+// dt.addEventListener("click", function () {
+//   // Select all h2s with class starting with 'diddy'
+//   let allDiddys = document.querySelectorAll('h2');
+//     let last = allDiddys[allDiddys.length - 1];
+//     last.remove();
+  
+// });
+
+
