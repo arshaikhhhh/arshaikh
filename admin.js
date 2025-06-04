@@ -752,13 +752,13 @@
 // let chain = a.filter( (e) => ( e>56 ) ).reduce( (acc, crr) => ( acc+crr ), 0)
 // console.log(chain);
 
-const users = [
-  { name: "Alice", age: 25, isSubscribed: true },
-  { name: "Bob", age: 30, isSubscribed: false },
-  { name: "Charlie", age: 22, isSubscribed: true },
-  { name: "David", age: 28, isSubscribed: false },
-  { name: "Eve", age: 35, isSubscribed: true },
-];
+// const users = [
+//   { name: "Alice", age: 25, isSubscribed: true },
+//   { name: "Bob", age: 30, isSubscribed: false },
+//   { name: "Charlie", age: 22, isSubscribed: true },
+//   { name: "David", age: 28, isSubscribed: false },
+//   { name: "Eve", age: 35, isSubscribed: true },
+// ];
 
 // let arr = users.filter( (e) => ( e.isSubscribed == true )).map((e)=>( e.name))
 // console.log(arr);
@@ -798,3 +798,17 @@ const users = [
 
 // console.log(" worse day of my coding journey 03/06/2025 lose motivation watched webseires and stuff till 8:21 ")
 
+// ***create element and push it to HTML***
+
+// function crElmnt(){
+// let prada = document.createElement('h2')
+// prada.innerText = "arshaikh";
+// prada.className = "diddy"
+// prada.style.color = "yellow"
+// document.body.appendChild(prada)
+// }
+
+// let crd = document.querySelector('.oled')
+// crd.addEventListener("click", function(){
+//   crElmnt()
+// })
