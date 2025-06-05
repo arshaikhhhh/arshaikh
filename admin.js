@@ -292,7 +292,7 @@
 // you cant use this keyword in arrow function 
 
 // *****************IIFE(Immedietly Invoked Function Expression)*****************
-//named iife
+// named iife
 // (function arZod(){
 //    console.log(`yall okayyy`);
 // })();
@@ -460,7 +460,7 @@
 // }
 
 
-//ForIN(Can Be Used On Objects And Array(But With Specific Method) Both)
+// ForIN(Can Be Used On Objects And Array(But With Specific Method) Both)
 
 // let bol = {
 
@@ -826,4 +826,27 @@
   
 // });
 
+let r = document.querySelector('.red');
+let g = document.querySelector('.green');
+let b = document.querySelector('.blue');
+let m = document.body;
+function colorRed(){
+  m.style.backgroundColor = "red"
+}
+function colorGreen(){
+  m.style.backgroundColor = "green"
+}
+function colorBlue(){
+  m.style.backgroundColor = "blue"
+}
+
+r.addEventListener("click", function(){
+    colorRed()
+})
+g.addEventListener("click", function(){
+    colorGreen()
+})
+b.addEventListener("click", function(){
+    colorBlue()
+})
 
