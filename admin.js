@@ -826,29 +826,22 @@
   
 // });
 
-// let r = document.querySelector('.red');
-// let g = document.querySelector('.green');
-// let b = document.querySelector('.blue');
+// ***
+// let r = document.querySelectorAll('#button');
 // let m = document.body;
-// function colorRed(){
-//   m.style.backgroundColor = "red"
-// }
-// function colorGreen(){
-//   m.style.backgroundColor = "green"
-// }
-// function colorBlue(){
-//   m.style.backgroundColor = "blue"
-// }
 
-// r.addEventListener("click", function(){
-//     colorRed()
-// })
-// g.addEventListener("click", function(){
-//     colorGreen()
-// })
-// b.addEventListener("click", function(){
-//     colorBlue()
-// })
+// r.forEach( (btn) => {
+//     btn.addEventListener("click", (e) =>{
+//         if(e.target.className == 'red'){
+//             m.style.backgroundColor = "red"
+//         }else if(e.target.className == 'green'){
+//             m.style.backgroundColor = "green"
+//         }else if(e.target.className == "blue"){
+//             m.style.backgroundColor = e.target.className
+//         }
+//     } )
+    
+// } )
 
 // setInterval( function trom(){
 //   //**method 1 */
@@ -867,3 +860,5 @@
 // // dido.innerHTML = v;
 // // }
 // }, 1000)
+
+// *** guess numbers game ///
