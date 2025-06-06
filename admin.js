@@ -843,22 +843,21 @@
     
 // } )
 
-// setInterval( function trom(){
-//   //**method 1 */
-//       //  let time = new Date();
-//       //  let v = time.toTimeString()
-//       //  let dido = document.querySelector('.clock');
-//       //  dido.innerHTML = v;
-// //**method 2 */
-// // if(time.getMinutes() < 10 || time.getSeconds() < 10 ){
-// // let v = "0" + time.getHours() + " : " + "0" + time.getMinutes() + " : " + "0" + + time.getSeconds();
-// // let dido = document.querySelector('.clock');
-// // dido.innerHTML = v;
-// // }else{
-// // let v = time.getHours() + " : " + time.getMinutes() + " : "  + + time.getSeconds();
-// // let dido = document.querySelector('.clock');
-// // dido.innerHTML = v;
-// // }
-// }, 1000)
+setInterval( function trom(){
+//   **method 1 */
+       let time = new Date();
+       let v = time.toTimeString()
+       let dido = document.querySelector('.clock');
+       dido.innerHTML = v;
+// **method 2 */
+if(time.getMinutes() < 10 || time.getSeconds() < 10 ){
+let v = "0" + time.getHours() + " : " + "0" + time.getMinutes() + " : " + "0" + + time.getSeconds();
+let dido = document.querySelector('.clock');
+dido.innerHTML = v;
+}else{
+let v = time.getHours() + " : " + time.getMinutes() + " : "  + + time.getSeconds();
+let dido = document.querySelector('.clock');
+dido.innerHTML = v;
+}
+}, 1000)
 
-// *** guess numbers game ///
