@@ -861,3 +861,36 @@
 // }
 // }, 1000)
 
+// **** BMI Cals ***
+
+// let form = document.querySelector('form');
+// let r = document.querySelector('#result');
+// let d = document.querySelector('#final')
+// form.addEventListener('submit', function(e){
+//      e.preventDefault()
+//      let height = parseInt(document.querySelector('#height').value);
+// let weight = parseInt(document.querySelector('#weight').value);
+//        let fm = (weight / (height*height) * 10000).toFixed(2);
+
+//      if(height === "" || height < 0 || isNaN(height)){
+//        r.innerHTML = `<span>Invalid Value<span>`;
+//      }
+//      else if(weight === "" || weight < 0 || isNaN(weight)){
+//        r.innerHTML = `<span>Invalid Value<span>`;
+//      }else{
+//        r.innerHTML = `<span>The BMI Value Is ${fm}</span>`;
+//        console.log(fm);
+//      }
+//      let threesome = parseInt(fm)
+//      if(threesome<18.50){
+//        d.innerHTML = `<span> underweight </span>`
+//      }else if(threesome >= 18.50 && threesome < 24.90){
+//        d.innerHTML = `<span> normal weight </span>`
+//      }else if(threesome >= 25 && threesome < 29.90){
+//        d.innerHTML = `<span> overweight </span>`
+//      }else{
+//        d.innerHTML = `<span> Obese </span>`
+//      }
+
+// })
+
