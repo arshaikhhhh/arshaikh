@@ -894,3 +894,62 @@
 
 // })
 
+
+//  ** Math Guess ???S
+
+// let num1 = document.querySelector('.math1');
+// let num2 = document.querySelector('.math2');
+// let guess = document.querySelector('.sum');
+// let btn = document.querySelector('.done');
+// let btn2 = document.querySelector('.start');
+// let cnt=document.querySelector('.c');
+// let score = 0;
+// function ransum(){
+//         let a =(Math.random() * 100).toFixed(0)
+//       let b = (Math.random() * 100).toFixed(0)
+//       num1.innerHTML = a;
+//       num2.innerHTML = b;
+//       cnt.innerHTML = score;
+//       btn2.style.display = "none";
+//       guess.style.display = "flex";
+//       btn.style.display = "flex";
+// }
+
+// btn2.addEventListener("click", function(){
+//    ransum();
+// })
+// btn.addEventListener("click", function(){
+//      let result = parseInt(num1.innerHTML)+parseInt(num2.innerHTML);
+//      if(guess.value == result){
+//       ransum();
+//       guess.value = "";
+//       score++
+//       cnt.innerHTML = score;
+//      }else{
+//       score = 0;
+//        cnt.innerHTML = score;
+//       document.body.style.backgroundColor = "red"
+//       btn2.style.display = "flex";
+//         guess.style.display = "none";
+//       btn.style.display = "none";
+//      }
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
