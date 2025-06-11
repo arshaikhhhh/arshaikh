@@ -269,7 +269,7 @@
 //     age: 21,
 //     welcomeGreet: function(){
 //         console.log(`hey, ${this.name}`);
-        
+
 //     }
 
 // }
@@ -289,7 +289,7 @@
 // const bundkafunction = (lund1, lund2) => ( lund1+lund2 )//implicit return funtion/one line function(you'll use paranthisis() and dont have to use retun)
 // console.log(bundkafunction(3, 4));
 
-// you cant use this keyword in arrow function 
+// you cant use this keyword in arrow function
 
 // *****************IIFE(Immedietly Invoked Function Expression)*****************
 // named iife
@@ -303,7 +303,7 @@
 // //arrow iife and how to pass variable in funaction
 // ( (name) => {
 //    console.log(`hey, ${name} welcome to console`);
-   
+
 // } )("arshaikh");
 
 // let a = 10
@@ -314,7 +314,7 @@
 //     console.log("how'd you thik that 3 is greater than 10");
 // }else{
 //     console.log("here we are");
-    
+
 // }
 
 // let month = 6;
@@ -343,7 +343,7 @@
 //         break;
 //     default :
 //     console.log("the month does'nt exist");
-//     break;  
+//     break;
 // }
 
 // loops
@@ -352,18 +352,18 @@
 //     console.log(`${i} is i`);
 //     for (let j = 1; j< 11; j++){
 //         console.log(j + (j * i));
-        
+
 //     }
-    
+
 // }
 
 // let a = 0;
 
 // do{
-  
+
 //    console.log(` ${a} i love mahek `);
-//     a++ 
-   
+//     a++
+
 // }while(a < 10)
 
 // working of loops with array
@@ -378,7 +378,7 @@
 // let i = 0;
 
 // do{
- 
+
 //     console.log(`${arr[i]}`);
 //     i++
 
@@ -392,7 +392,7 @@
 //     break;
 //     }
 //     console.log(`a is ${a}`);
-    
+
 // }
 
 // for (let a = 0; a < 10; a++){
@@ -401,13 +401,13 @@
 //     continue;
 //     }
 //     console.log(`a is ${a}`);
-    
+
 // }
 // short hand version of if-else
 //  let b = 100;
 
 //  (b == 100) ? console.log("yes b sahi hai") : console.log("no its not");
-  
+
 // AND(&&), OR(||) in if-else
 
 // let i = {
@@ -421,10 +421,10 @@
 // AND(&&) Example
 // if(i.node && i.logged == true){
 //     console.log("we so back " + i.node);
-    
+
 // }else{
 //     console.log("logg in mf");
-    
+
 // }
 
 // OR(||) Example
@@ -435,7 +435,7 @@
 //     console.log("bhai i am mark zuckerburg");
 // }
 
-// important url: https://developer.mozilla.org/en-US/docs/Glossary/Control_flow and 
+// important url: https://developer.mozilla.org/en-US/docs/Glossary/Control_flow and
 // https://latentflip.com/loupe/?code=ZnVuY3Rpb24gb25lKCkgew0KICB0d28oKTsNCn0NCg0KZnVuY3Rpb24gdHdvKCkgew0KICB0aHJlZSgpOw0KfQ0KDQpmdW5jdGlvbiB0aHJlZSgpIHsNCiAgY29uc29sZS5sb2coIkhlbGxvIik7DQp9DQoNCm9uZSgpOw0K!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
 
 // Higher Order Array Loops + ForIN + Map(new datatype, you can only pass a unique value in this)
@@ -448,17 +448,15 @@
 // // ForOf(for of is only higher order loop which can iterate on Map datatype cuz it does not require key which map does not have)
 // for (const e of map) {
 //    console.log(`it ${e}`);
-   
-// }
 
+// }
 
 // let a = ['arshaikh', 'mahek', 'ziyan']
 
 // for (const e of a) {
 //     console.log(e);
-    
-// }
 
+// }
 
 // ForIN(Can Be Used On Objects And Array(But With Specific Method) Both)
 
@@ -476,7 +474,6 @@
 
 // use on Arrays
 // let a = ['arshaikh', 'mahek', 'ziyan']
- 
 
 // for (const i in a){
 //     console.log(a[i]);
@@ -491,7 +488,7 @@
 
 // lol.forEach( (e) => {
 //    console.log(e);
-   
+
 // } )
 
 // let dbInfo = [
@@ -517,7 +514,7 @@
 
 // dbInfo.forEach( (e) => {
 //     console.log(`the name of account is ${e.name} the phone number is ${e.phone} and age of user is ${e.age} and here is email ${e.email}`);
-    
+
 // } )
 
 // the parameters you can pass in function are index, item and array it self
@@ -526,12 +523,11 @@
 
 // wind.forEach( (index, item, arr) => {
 //    console.log(index, item, arr);
-   
+
 // } )
 
 // filter()
 // let arr = [1,2,3,4,5,6,7,8,9,10]
-
 
 // let numbs = arr.filter( (e) => ( e>5 ) )
 // console.log(numbs);
@@ -553,22 +549,18 @@
 //   { name: "Matilda", publishYear: 1988, author: "Roald Dahl" }
 // ];
 
-
-// let brr = books.filter( (e) => { 
-//     return e.publishYear === 1998 && e.author === "J.K. Rowling" 
+// let brr = books.filter( (e) => {
+//     return e.publishYear === 1998 && e.author === "J.K. Rowling"
 
 // } )
 // console.log(brr);
 
 // map()
 
-
 // let arr = [1,2,3,4,5,6,7,8,9,10]
 
 // let dehm = arr.map( (e) => ( e * 2 ) )
 // console.log(dehm);
-
-
 
 // const books = [
 //   { name: "To Kill a Mockingbird", publishYear: 1960, author: "Harper Lee" },
@@ -587,9 +579,8 @@
 //   { name: "Matilda", publishYear: 1988, author: "Roald Dahl" }
 // ];
 
-
 // let brr = books.map( (e) => {
-//    return console.log(`this book ${e.name} was published in ${e.publishYear} and written by ${e.author}`) 
+//    return console.log(`this book ${e.name} was published in ${e.publishYear} and written by ${e.author}`)
 // })
 
 // chaining
@@ -731,13 +722,12 @@
 //   }
 // ];
 
-
 //  let arr = shoppingCart.filter( (e) => ( e.productType == "stationery" ) ).reduce( (acc, crr) => ( acc+crr.total ), 0)
 //  let arr2 = shoppingCart.filter( (e) => ( e.productType == "electronics" ) ).reduce( (acc, crr) => ( acc+crr.total ), 0)
 
 //  console.log(`your stationery total is ${arr} and electronics total is ${arr2}`);
 //  console.log(`total bill: ${arr+arr2}`);
- 
+
 // let a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
 // let b = a.map( (e) => ( e - 9 ) )
@@ -762,7 +752,6 @@
 
 // let arr = users.filter( (e) => ( e.isSubscribed == true )).map((e)=>( e.name))
 // console.log(arr);
-
 
 // let arr = users.reduce((acc, crr) => ( acc+crr.age/5 ), 0)
 // console.log(arr);
@@ -823,7 +812,7 @@
 //   let allDiddys = document.querySelectorAll('h2');
 //     let last = allDiddys[allDiddys.length - 1];
 //     last.remove();
-  
+
 // });
 
 // ***
@@ -840,7 +829,7 @@
 //             m.style.backgroundColor = e.target.className
 //         }
 //     } )
-    
+
 // } )
 
 // setInterval( function trom(){
@@ -894,7 +883,6 @@
 
 // })
 
-
 //  ** Math Guess ???S
 
 // let num1 = document.querySelector('.math1');
@@ -938,21 +926,18 @@
 // *********Async JS*****
 // setTimeout(()=>{
 //     console.log("arshaikh");
-    
+
 // }, 2000) // this will print arshaikh in colsole after 2 seconds
+let str = document.querySelector("#start");
+let stp = document.querySelector("#stop");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+str.addEventListener("click", function () {
+  let a =  setInterval(() => {
+    console.log("arshaikh");
+  }, 1000);
+  stp.addEventListener("click", function () {
+  clearInterval(a);
+});
+});
 
 
