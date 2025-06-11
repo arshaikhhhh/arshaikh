@@ -935,8 +935,11 @@
 //      }
 // })
 
-
-
+// *********Async JS*****
+// setTimeout(()=>{
+//     console.log("arshaikh");
+    
+// }, 2000) // this will print arshaikh in colsole after 2 seconds
 
 
 
