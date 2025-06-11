@@ -893,8 +893,8 @@
 // let cnt=document.querySelector('.c');
 // let score = 0;
 // function ransum(){
-//         let a =(Math.random() * 100).toFixed(0)
-//       let b = (Math.random() * 100).toFixed(0)
+//         let a =(Math.floor(Math.random()*16) * 100).toFixed(0)
+//       let b = (Math.floor(Math.random()*16) * 100).toFixed(0)
 //       num1.innerHTML = a;
 //       num2.innerHTML = b;
 //       cnt.innerHTML = score;
@@ -928,22 +928,40 @@
 //     console.log("arshaikh");
 
 // }, 2000) // this will print arshaikh in colsole after 2 seconds
-let str = document.querySelector("#start");
-let stp = document.querySelector("#stop");
-let inter;
+// let str = document.querySelector("#start");
+// let stp = document.querySelector("#stop");
+// let inter;
 
-str.addEventListener('click', function(){
-  if(!inter){
-  inter = setInterval(()=>{
-    console.log("arshaikh");    
-  }, 1000)
-}
-})
+// str.addEventListener('click', function(){
+//   if(!inter){
+//   inter = setInterval(()=>{
+//     console.log("arshaikh");    
+//   }, 1000)
+//   }
+// })
 
-stp.addEventListener('click', function(){
-  clearInterval(inter)
-  inter = null;
-})
+// stp.addEventListener('click', function(){
+//   clearInterval(inter)
+//   inter = null;
+// })
+// let str = document.querySelector("#start");
+// let stp = document.querySelector("#stop");
+// let inter;
+// let clr = 
+// str.addEventListener('click', function(){
+//   if(!inter){
+//   inter = setInterval(()=>{
+//     document.body.style.background = `rgb(${Math.floor(Math.random()*16)*200}, ${Math.floor(Math.random()*10)*100}, ${Math.floor(Math.random()*9)*100})`
+//   }, 1000)
+// }
+// })
+
+// stp.addEventListener('click', function(){
+//   clearInterval(inter)
+//   inter = null;
+// })
+
+
 
 
 
