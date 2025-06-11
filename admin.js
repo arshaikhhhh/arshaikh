@@ -960,29 +960,46 @@
 //   clearInterval(inter)
 //   inter = null;
 // })
-let insert = document.querySelector('.keyin');
-const input = document.getElementById("fakeInput");
+// let insert = document.querySelector('.keyin');
+// const input = document.getElementById("fakeInput");
 
-document.body.addEventListener("click", () => {
-  input.focus(); 
-});
+// document.body.addEventListener("click", () => {
+//   input.focus(); 
+// });
 
-window.addEventListener('keydown', function(e){
-    insert.innerHTML = `
-    <table>
-  <tr>
-    <td>key</td>
-    <td>keycode</td>
-    <td>code</td>
-  </tr>
-  <tr>
-    <td>${e.key === " "?"space" : e.key}</td>
-    <td>${e.keyCode}</td>
-    <td>${e.code}</td>
-  </tr>
-</table>
-    `
-})
+// window.addEventListener('keydown', function(e){
+//     insert.innerHTML = `
+//     <table>
+//   <tr>
+//     <td>key</td>
+//     <td>keycode</td>
+//     <td>code</td>
+//   </tr>
+//   <tr>
+//     <td>${e.key === " "?"space" : e.key}</td>
+//     <td>${e.keyCode}</td>
+//     <td>${e.code}</td>
+//   </tr>
+// </table>
+//     `
+// })
+// let btn = document.querySelector('#o');
+// let img = document.querySelector('#pfp');
+// let urn = document.querySelector('.un');
+
+// let url = "https://api.github.com/users/BlackArch0";
+
+// btn.addEventListener('click', function(){
+// let req = new XMLHttpRequest();
+// req.open('GET', url)
+// req.onreadystatechange = function(){
+//   let data = JSON.parse(this.responseText)
+//   img.innerHTML = `<img class="pfp" src="${data.avatar_url}">`;
+//   urn.innerHTML = `<span>${data.login}</span>`
+  
+// }
+// req.send()
+// })
 
 
 
