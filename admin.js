@@ -961,6 +961,12 @@
 //   inter = null;
 // })
 let insert = document.querySelector('.keyin');
+const input = document.getElementById("fakeInput");
+
+document.body.addEventListener("click", () => {
+  input.focus(); 
+});
+
 window.addEventListener('keydown', function(e){
     insert.innerHTML = `
     <table>
