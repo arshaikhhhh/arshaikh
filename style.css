@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  color: #fff;
+}
+
+.keyin {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+td {
+  padding: 15px 30px;
+  border: 1px solid #444;
+}
