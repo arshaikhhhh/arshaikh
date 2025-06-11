@@ -960,7 +960,23 @@
 //   clearInterval(inter)
 //   inter = null;
 // })
-
+let insert = document.querySelector('.keyin');
+window.addEventListener('keydown', function(e){
+    insert.innerHTML = `
+    <table>
+  <tr>
+    <td>key</td>
+    <td>keycode</td>
+    <td>code</td>
+  </tr>
+  <tr>
+    <td>${e.key === " "?"space" : e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+    `
+})
 
 
 
