@@ -930,14 +930,20 @@
 // }, 2000) // this will print arshaikh in colsole after 2 seconds
 let str = document.querySelector("#start");
 let stp = document.querySelector("#stop");
+let inter;
 
-str.addEventListener("click", function () {
-  let a =  setInterval(() => {
-    console.log("arshaikh");
-  }, 1000);
-  stp.addEventListener("click", function () {
-  clearInterval(a);
-});
-});
+str.addEventListener('click', function(){
+  if(!inter){
+  inter = setInterval(()=>{
+    console.log("arshaikh");    
+  }, 1000)
+}
+})
+
+stp.addEventListener('click', function(){
+  clearInterval(inter)
+  inter = null;
+})
+
 
 
