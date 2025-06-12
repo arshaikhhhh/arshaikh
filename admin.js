@@ -935,7 +935,7 @@
 // str.addEventListener('click', function(){
 //   if(!inter){
 //   inter = setInterval(()=>{
-//     console.log("arshaikh");    
+//     console.log("arshaikh");
 //   }, 1000)
 //   }
 // })
@@ -947,7 +947,7 @@
 // let str = document.querySelector("#start");
 // let stp = document.querySelector("#stop");
 // let inter;
-// let clr = 
+// let clr =
 // str.addEventListener('click', function(){
 //   if(!inter){
 //   inter = setInterval(()=>{
@@ -964,7 +964,7 @@
 // const input = document.getElementById("fakeInput");
 
 // document.body.addEventListener("click", () => {
-//   input.focus(); 
+//   input.focus();
 // });
 
 // window.addEventListener('keydown', function(e){
@@ -996,11 +996,27 @@
 //   let data = JSON.parse(this.responseText)
 //   img.innerHTML = `<img class="pfp" src="${data.avatar_url}">`;
 //   urn.innerHTML = `<span>${data.login}</span>`
-  
+
 // }
 // req.send()
 // })
 
+// let profile = document.querySelector("#pfp");
+// let nam = document.querySelector("#nom");
+// let insta = document.querySelector("#ig");
+// let btn = document.querySelector("button");
+// btn.addEventListener('click', function(){
+// console.log("Fetching user...");
+// fetch("https://api.github.com/users/BlackArch0")
+//   .then((res) => res.json())
+//   .then((data) => {
 
+//   profile.src = data.avatar_url
+//   nam.innerHTML = data.name
+//   insta.innerHTML = data.blog
+
+//   })
+//   .catch((error) => console.log( "the problem is : ", error));
+// })
 
 
