@@ -1020,3 +1020,24 @@
 // })
 
 
+//   let b = document.querySelector('#gen');
+//       let body = document.querySelector('body');
+ 
+// fetch('https://api.imgflip.com/get_memes')
+//   .then(res => res.json())
+//   .then(e => {
+//      function lm(){
+//     e.data.memes.forEach(meme => {
+//       let img = document.createElement('img');
+//       img.src = meme.url;
+//       img.alt = meme.name;
+//       img.style.width = '200px'; // optional styling
+//       img.style.margin = '10px'; // optional styling
+//       body.appendChild(img);
+//     });
+
+//   }
+//   b.addEventListener('click', lm)
+//   })
+//   .catch(error => console.log(error));
+  
