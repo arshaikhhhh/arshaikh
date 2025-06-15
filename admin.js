@@ -1019,10 +1019,9 @@
 //   .catch((error) => console.log( "the problem is : ", error));
 // })
 
-
 //   let b = document.querySelector('#gen');
 //       let body = document.querySelector('body');
- 
+
 // fetch('https://api.imgflip.com/get_memes')
 //   .then(res => res.json())
 //   .then(e => {
@@ -1040,4 +1039,27 @@
 //   b.addEventListener('click', lm)
 //   })
 //   .catch(error => console.log(error));
-  
+// function getDT(){
+// fetch("https://v2.jokeapi.dev/joke/Dark")
+//   .then((res) => res.json())
+//   .then((e) => {
+//     let a = document.querySelector("#main");
+    
+//     let c = document.querySelector("#del");
+//       if (e.type == "twopart") {
+//         a.innerHTML = e.setup;
+//         c.innerHTML = e.delivery;
+//       } else {
+//         a.innerHTML = e.joke;
+//         c.innerHTML = ""; // Clear delivery if it's a single joke
+//       }
+//       // console.log(e.json());
+//     })
+//   .catch((err) => console.log("the error is", err));
+// }
+//   let b = document.querySelector("#gen");
+
+//   b.addEventListener("click", function () {
+//           getDT()
+
+//       })
