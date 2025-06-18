@@ -1044,7 +1044,7 @@
 //   .then((res) => res.json())
 //   .then((e) => {
 //     let a = document.querySelector("#main");
-    
+
 //     let c = document.querySelector("#del");
 //       if (e.type == "twopart") {
 //         a.innerHTML = e.setup;
@@ -1063,4 +1063,22 @@
 //           getDT()
 
 //       })
-console.log("happy birthday");
+// console.log("happy birthday");>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!***********************************************************************************************************************************************
+
+// let user = [
+//   {
+//     username: "arshaikh",
+//     phone: 1234567890,
+//     insta: "arshaikh.co",
+//     single: true,
+//   },
+//   { username: "uknow", phone: 90987654321, insta: "example", single: true },
+//   { username: "uknow2", phone: 9030335432, insta: "exampleig", single: false }
+// ];
+// user
+//   .filter((a) => {
+//     return a.single === true;
+//   })
+//   .map((e) => {
+//     console.log(e.username + " we are single");
+//   });
