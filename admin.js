@@ -1250,4 +1250,31 @@
 // console.log(user1.setId())
 // console.log(user1 instanceof User); // instanceof
 
+// getter setter
+// class User{
+//     constructor(user,email){
+//         this.user = user
+//         this.email = email
+//     }
+//     get email(){
+//         this._email.toUpperCase()
+//     }
+//     set email(cl){
+//         this._email = `${cl}senitized`
+//     }
+// }
 
+// let user1 = new User("ar", "ar@427.co")
+// console.log(user1._email);
+
+/// lexical scope
+// function outer(cl){
+    
+//     return function inner(){
+//         console.log(cl);
+        
+//     }
+// }
+
+// let sv = outer("ar") (this function stores the value and lexical scope of outer fcuntion in memory and thats called clouser)
+// sv()
