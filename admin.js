@@ -1,3 +1,5 @@
+//BOMBBASTIC LINE/   everything goes through the object in javascript
+// ------wrote something bibilic at line number 1124
 // // // console.log('ar');
 // // // console.log('first file puss')
 
@@ -1082,3 +1084,170 @@
 //   .map((e) => {
 //     console.log(e.username + " we are single");
 //   });
+// *****************OOP(Object Oriented Programing)****
+//
+// (1)Object Literal
+// {}
+// yes this is object literal like literaly bro it is object 
+//
+// (2) constructor function
+// function getProps(username, pass, uid){
+//       this.username = username;
+//       this.pass = pass;
+//       this.uid = uid;
+//       return this;
+// }
+// let user1 = new getProps("teri maa ki chut bhadve", "dub ke marja madharchod", 69)
+// let user2 = new getProps("sorry but i dont agree with your opinion", "everyone should have there own opinion thats okay", 2)
+// let user3 = getProps("teri maa ki chut bhadve", "dub ke marja madharchod", 69)
+// console.log(user1);
+// console.log(user2);
+// check out 1128 till end of new mentioned for more
+
+//4 pillars of OOP(bade bade name given by chhote bade devs)
+// abstraction- hiding details
+// encapsulation- wraping up of data(you can control who use what)
+// inheritance(in proto)
+// polymorphism- poly= many morphism= forms, poly+morphism= many forms/types 
+// (you better learn all of this from chatgpt)
+// Mostly OOP Done here ig now advance part of OOP Or JS whatever yoy wanna call it
+
+// (3) Prototypes(proto or in js __proto__)
+// javascript has protoypal behaviour and its not about just oop its about mechanism of javascript how it works prototype and proto is different and thats why some call it proto to avoid confusion
+// default behaviour of js is protoypal behaviour means it will try its best to find what you were asking for(upar se upar jaege like we use dot notation to find anything whatever value it is and no matter how long the code or line it self get, will access child, parents, grand parents, great grand parent, good great grand parents and then comes __proto__ than more __proto__ of it until we dont get protos it will keep trying and when it doesn't find it than only and ONLY then it will stop) i love javascript its the most hard working language bro i developed a feelings i love you ccan i kiss shoudld we get married 
+// if yoy created array(array is object in it self in javascript actually everything is object so when you trace the __proto__ tree) it look like this
+// array>>object>null(null itself is array in js but this is referance of real world so yeall it says you get nothing and you should jump into river full of lava cuz you just made javascript feel worthless she a queen bro i love her muhaahhh)
+// same with strings, string>>object
+// even function it in itself is object you can access the value of by dot notation and make it work like funcName.power = 2 bla bla
+// and we call it protoypal inheritance js wont give up and who not give up easily i fall in love with em so i love js we should get married 
+// i am jssexual lmao
+// proto is like c:// of windows you cant go anywhere beyonf that
+// this(keyword) is also an object at the end
+// this key word simply means whoever called go to them(in matru bhasha hindi jisne bhi bulaya hai uske paas jao)
+// jis ka matlab this ~ hitesh chaudhry-2023 (chai aur javascript chapter 43:timetamp 19:40)
+// basically this is sytectic sugar of js for protoypal inheritance
+//the new keyword/// new keyword create new instance
+// new keyword functionality: creates new object---linked to prototype propety of constructor function(this means is has access to properties and methods definedon the contructor's prototype)
+// then the constrctor is called ----the constructor function(new in most cases) is called with the specified arguments and this(keyword) is bound to the newly created object {i.e check try run OOP.2 code}if there is no explicit return calue is specified from the contructor(which is new again in mostly cases i assume) javascript assume this(not keyword), the newly created object, to be the intended return value (well u have to watch 43rd video i guess sometimes in future lol its sde2 stuff)
+// and then the newly freshly brand new goodest chummershvari new NEWLY made object is returned once the constructo is called[three laters but gand faad right]
+//end of new/
+
+
+//BOMBBASTIC LINE/   everything goes through the object in javascript{
+// if you access object in js you can use it in pretty much everything
+// let b = {
+//     user: "lol",
+//     pass: "xD",
+//     num: 512,
+//     func: function(){
+//         console.log(this.user +" chura rha meri lines");
+//     }
+// }
+
+
+// Object.prototype.pmkabeta = function(){
+//     console.log("me india ke pm ka beta hu aur " + this.user + " se milna chahta hu");
+//    //pm ka beta hai bhai kisi se bhi mil sakta hai you know higher power xD 
+// }
+
+// b.pmkabeta()
+
+// console.log(b);
+//}
+// also javascript stops when it finds the value so if you assign value to array like here Array.prototype.pmkabeta and function than you will not be access it in Objects
+// you can link multiple objects arrays using __proto__
+
+// let human = {
+//     naam: "abdul rahim shaikh",
+//     proffesion: "front end dev",
+//     irl: 27,
+//     isDead: false
+// }
+// let user = {
+//     username: "ar",
+//     id: 427,
+//     socials: "arshaikh.co",
+//     __proto__: human 
+// }
+// console.log(user.__proto__.isDead);
+
+// user.__proto__.isDead = true; // you can access the value outside too
+// console.log(user.__proto__.isDead);
+
+// modern syntext is
+// Object.setPrototypeOf(user, human)
+
+// call
+ 
+// function setUsername(username){
+//     this.username = username
+// }
+
+// function createUser(username, email, pass){
+//     setUsername.call(this, username)
+//    // call pass the current execution context to another function 
+//     this.email = email
+//     this.pass = pass
+// }
+
+// let chai =  new createUser("chai", "chai@fb", "123")
+
+// console.log(chai);
+
+// class
+
+// class User {
+//     constructor(username, email, pass){
+//         this.username = username
+//         this.email = email
+//         this.pass = pass
+//     }
+
+//     encrtyptPass(){
+//         console.log(`${this.pass}ihruhrwuhrwu`);
+//     }
+// }
+
+// let user1 = new User("arshaikh", "ar4270000@gmail.com", "085839")
+
+// console.log(user1.encrtyptPass());
+
+// inhertitance in class
+
+// class User {
+//     constructor(username, socials, email){
+//         this.username = username
+//         this.socials = socials
+//         this.email = email
+//     }
+
+//     isLogIn(){
+//         console.log(`yes the ${this.username} is logged in`);
+        
+//     }
+// }
+
+// class Human extends User{
+//     constructor(username, naam, age, isDead){
+//         super(username)
+//         this.naam = naam
+//         this.age = age
+//         this.isDead = isDead
+//     }
+//     fnc(){
+//         console.log(` ${this.username} in irl is ${this.naam}`);
+        
+//     }
+//     
+//     static setId(){
+//       return `69`  
+//       }       // if you dont want to give id to every value which is originated from this class use static
+// }
+
+// let user1 = new Human("ar", "abdul rahim", "22", false);
+
+// user1.fnc()
+// console.log(user1.setId())
+// console.log(user1 instanceof User); // instanceof
+
+
