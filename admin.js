@@ -1263,7 +1263,6 @@
 //         this._email = `${cl}senitized`
 //     }
 // }
-
 // let user1 = new User("ar", "ar@427.co")
 // console.log(user1._email);
 
