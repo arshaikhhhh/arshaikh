@@ -1,6 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/93668676?v=4">
+<title>AR Shaikh | Portfolio</title>
+<script src="https://kit.fontawesome.com/2641acfd9e.js" crossorigin="anonymous"></script>
+
+<style>
+/* --- COMMON STYLES --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  color: #333; /* default light text */
+  background: #f9f9f9; /* default light bg */
+}
+
+header {
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.pfp-wrapper, .profile-pic {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+img.pfp {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.work-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+  color: #fff;
+  background: #0077b5; /* light theme button */
+}
+
+.work-btn i {
+  margin-right: 8px;
+}
+
+.work-btn:hover {
+  background: #005582;
+}
+
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #333; /* light theme */
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0077b5;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #666; /* light theme */
+}
+
+.shrink-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: clamp(10px, 2vw, 16px);
+}
+
+.f-faded {
+  color: rgba(0,0,0,0.5);
+}
+
+/* --- THEME TOGGLE BUTTON --- */
+#theme-toggle {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin: 20px;
+    stroke: #0077b5;
+    stroke-width: 2;
+    fill: none;
+    transition: all 0.3s ease;
+  }
+
+  /* Rotate animation for fun */
+  .rotated {
+    transform: rotate(40deg);
+  }
+
+/* --- DARK THEME OVERRIDES --- */
+body.dark-mode {
+  background: radial-gradient(circle at top, #0ff2, transparent 70%),
+              linear-gradient(180deg, #0d0d0d, #111 80%);
+  color: #e0e0e0;
+}
+
+body.dark-mode .pfp-wrapper::before {
+  content: "⿻";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 2rem;
+  color: rgba(255,0,100,0.85);
+  text-shadow: 0 0 8px rgba(255,0,100,0.6);
+  opacity: 1;
+  transform: scale(1);
+}
+
+body.dark-mode .pfp-wrapper::after {
+  content: "⿻";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 1.4rem;
+  color: rgba(255,0,100,0.85);
+  text-shadow: 0 0 6px rgba(255,0,100,0.6);
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 0.4s ease;
+}
+body.dark-mode .pfp-wrapper:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+body.dark-mode img.pfp:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 0 6px #c9007c, 0 0 30px rgba(255,0,100,0.3);
+}
+
+body.dark-mode .work-btn {
+  background: #00adb5;
+}
+
+body.dark-mode .work-btn:hover {
+  background: #008b91;
+}
+
+body.dark-mode .social-links a {
+  color: #bbb;
+}
+body.dark-mode span {
+  color: #bbb;
+}
+body.dark-mode .social-links a:hover {
+  color: #00adb5;
+}
+.theme-container {
+  position: relative;
+  display: inline-block;
+}
+
+#theme-toggle {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  stroke: #0077b5;
+  stroke-width: 2;
+  fill: none;
+  transition: all 0.3s ease;
+}
+
+.popup {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 90px;
+  transform: translateX(-50%);
+  background: #0077b5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+
+.popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+body.dark-mode footer {
+  color: #aaa;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="pfp-wrapper">
+    <img src="https://avatars.githubusercontent.com/u/93668676?v=4" alt="AR Shaikh Profile Picture" class="pfp">
+  </div>
+  <h1>AR Shaikh</h1>
+  <p>A Human Being</p>
+</header>
+
+<div class="theme-container">
+  <svg id="theme-toggle" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <div id="popup" class="popup">Tap Me</div>
+</div>
+<section class="about work-link">
+  <p>WE NEVER know, LEAVE IT TO GOD!</p>
+  <a href="https://github.com/arshaikhhhhh" target="_blank" class="work-btn">
+    <i class="fab fa-github"></i> Check Out My Work
+  </a>
+</section>
+
+<section class="social-links">
+  <a href="https://discord.com/users/893756643257507850" target="_blank"><i class="fa-brands fa-discord"></i></a>
+  <a href="https://linkedin.com/in/arshaikhhhhh" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://twitter.com/arshaikhhhhh" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com/arshaikhhhhh" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com/@arshaikhhhhh" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  <a href="mailto:arshaikhhhhh@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://soundcloud.com/arshaikhhhhh" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+</section>
+
+<center>
+  <code>
+    <span class="f-faded shrink-text">tip: find me pretty much everywhere by @ arshaikhhhhh</span>
+  </code>
+</center>
+
+<footer>
+  <p>© <span id="year"></span> AR Shaikh. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const toggleButton = document.getElementById('theme-toggle');
+const popup = document.getElementById('popup');
+
+// Load saved theme from localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  document.body.classList.add(savedTheme);
+}
+
+// Show popup on page load
+window.addEventListener('DOMContentLoaded', () => {
+  popup.classList.add('show');
+  setTimeout(() => {
+    popup.classList.remove('show');
+  }, 1500);
+});
+
+// Toggle theme on button click
+toggleButton.addEventListener('click', () => {
+  if (document.body.classList.contains('dark-mode')) {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    localStorage.setItem('theme', 'light-mode');
+  } else {
+    document.body.classList.remove('light-mode');
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark-mode');
+  }
+});
+
+</script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/93668676?v=4">
@@ -144,7 +457,7 @@
   </script>
 </body>
 </html>
-
+ -->
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
